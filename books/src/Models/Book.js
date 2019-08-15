@@ -13,7 +13,7 @@ const BookSchema = new mongoose.Schema({
     },
 
     numberPages: {
-        type: String,
+        type: Number,
         required: false
     },
 

@@ -13,6 +13,14 @@ module.exports = {
 
         res.status(201).json(book)
 
+    },
+
+    async show(req, res) {
+
+        const book = await Book.findById(req.params.id)
+
+        res.status(200).json(book)
+
     }
 
 }
