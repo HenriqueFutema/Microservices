@@ -21,6 +21,14 @@ module.exports = {
 
         res.status(200).json(book)
 
+    },
+
+    async destroy(req, res) {
+
+        const book = await Book.findByIdAndDelete(req.params.id)
+
+        res.status(200).json("Livro deletado")
+
     }
 
 }

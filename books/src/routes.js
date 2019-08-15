@@ -12,4 +12,6 @@ routes.get('/book/:id', BookController.show)
 
 routes.post('/book', BookController.store)
 
+routes.delete('/book/:id', BookController.destroy)
+
 module.exports = routes
