@@ -6,7 +6,7 @@ const OrderSchema = new mongoose.Schema({
         required: true
     },
 
-    book: {
+    bookId: {
         type: mongoose.SchemaTypes.ObjectId,
         required: true
     },
