@@ -10,7 +10,7 @@ mongoose.connect(config.url, {
 
 app.use(express.json())
 
-//app.use(require('./routes'))
+app.use(require('./routes'))
 
 app.listen(3001, () => {
     console.log("Customers Porta 3001");

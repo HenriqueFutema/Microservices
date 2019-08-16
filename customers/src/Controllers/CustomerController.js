@@ -27,7 +27,7 @@ module.exports = {
 
         const customer = await Customer.findByIdAndDelete(req.params.id)
 
-        res.status(200).json("Livro deletado")
+        res.status(200).json("User deletado")
 
     }
 
